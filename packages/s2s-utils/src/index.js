@@ -28,7 +28,7 @@ export function inheritsOpts() {
   return {
     // eslint-disable-next-line flowtype/no-weak-types
     manipulateOptions(opts: Object, parserOpts: Object) {
-      ;['flow', 'objectRestSpread'].forEach(plugin => {
+      ;['flow', 'objectRestSpread', 'classProperties'].forEach(plugin => {
         parserOpts.plugins.push(plugin)
       })
     },

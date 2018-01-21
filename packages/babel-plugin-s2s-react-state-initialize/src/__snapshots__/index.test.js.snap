@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`s2s-react-state-initialize initialize react state: initialize react state 1`] = `
+"
+// @flow
+import * as React from 'react'
+
+type C = { d: string, e: number }
+
+type State = { a: string, b: number, c: C }
+
+// $FlowFixMe
+class Fixture extends React.Component<{}, State> {
+  state = {}
+  render() {
+    return null
+  }
+}
+
+export default Fixture
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+// @flow
+import * as React from 'react';
+
+type C = { d: string; e: number; };
+
+type State = { a: string; b: number; c: C; };
+
+// $FlowFixMe
+class Fixture extends React.Component<{}, State> {
+  state = {};
+  render() {
+    return null;
+  }
+}
+
+export default Fixture;
+"
+`;
+
+exports[`s2s-react-state-initialize no react class: no react class 1`] = `
+"
+// @flow
+import * as React from 'react'
+
+class Fixture {
+  render() {
+    return null
+  }
+}
+
+export default Fixture
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+// @flow
+import * as React from 'react';
+
+class Fixture {
+  render() {
+    return null;
+  }
+}
+
+export default Fixture;
+"
+`;
+
+exports[`s2s-react-state-initialize no state type: no state type 1`] = `
+"
+// @flow
+import * as React from 'react'
+
+type C = { d: string, e: number }
+
+type State = { a: string, b: number, c: C }
+
+class Fixture extends React.Component<{}> {
+  render() {
+    return null
+  }
+}
+
+export default Fixture
+
+      ↓ ↓ ↓ ↓ ↓ ↓
+
+// @flow
+import * as React from 'react';
+
+type C = { d: string; e: number; };
+
+type State = { a: string; b: number; c: C; };
+
+class Fixture extends React.Component<{}> {
+  render() {
+    return null;
+  }
+}
+
+export default Fixture;
+"
+`;

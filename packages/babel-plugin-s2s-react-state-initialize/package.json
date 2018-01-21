@@ -1,0 +1,19 @@
+{
+  "name": "babel-plugin-s2s-react-state-initialize",
+  "version": "0.0.0",
+  "description": "generate state from type definition",
+  "license": "MIT",
+  "repository": "akameco/s2s",
+  "author": "akameco <akameco.t@gmail.com> (akameco.github.io)",
+  "engines": {
+    "node": ">=6"
+  },
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "babel-helper-is-react-class": "^1.0.0",
+    "flow-faker": "^0.2.0"
+  }
+}
